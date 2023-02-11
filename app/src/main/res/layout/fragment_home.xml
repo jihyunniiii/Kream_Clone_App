@@ -25,8 +25,13 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             app:layout_constraintTop_toBottomOf="@+id/ib_notification"
+            app:tabIndicatorColor="@color/black"
             app:tabIndicatorFullWidth="false"
-            app:tabMode="scrollable" />
+            app:tabMode="scrollable"
+            app:tabRippleColor="@android:color/transparent"
+            app:tabSelectedTextAppearance="@style/Theme.KreamClone.tabSelected"
+            app:tabSelectedTextColor="@color/black"
+            app:tabTextColor="@color/black" />
 
         <androidx.viewpager2.widget.ViewPager2
             android:id="@+id/vp_home"
