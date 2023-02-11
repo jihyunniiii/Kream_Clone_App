@@ -20,6 +20,12 @@ class HomeFragment : Fragment() {
         WomenFragment()
     )
 
+    private var tabNames = listOf(
+        "추천",
+        "남성",
+        "여성"
+    )
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -35,7 +41,7 @@ class HomeFragment : Fragment() {
         adapter.setFragmentList(fragmentList)
 
         TabLayoutMediator(binding.tabHome, binding.vpHome)
-        { tab, position -> }.attach()
+        { tab, position -> tab.text = tabNames[position]}.attach()
     }
 
     override fun onDestroyView() {
