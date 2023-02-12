@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/item_home_home"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:iconTint="@color/black"
+        android:title="@string/menu_home" />
+
+    <item
+        android:id="@+id/item_home_style"
+        android:enabled="false"
+        android:icon="@drawable/ic_outline_wysiwyg_24"
+        android:iconTint="@color/black"
+        android:title="@string/menu_style" />
+
+    <item
+        android:id="@+id/item_home_shop"
+        android:enabled="false"
+        android:icon="@drawable/ic_outline_manage_search_24"
+        android:iconTint="@color/black"
+        android:title="@string/menu_shop" />
+
+    <item
+        android:id="@+id/item_home_watch"
+        android:enabled="false"
+        android:icon="@drawable/ic_outline_slideshow_24"
+        android:iconTint="@color/black"
+        android:title="@string/menu_watch" />
+
+    <item
+        android:id="@+id/item_home_my"
+        android:enabled="false"
+        android:icon="@drawable/ic_outline_person_24"
+        android:iconTint="@color/black"
+        android:title="@string/menu_my" />
+
+</menu>

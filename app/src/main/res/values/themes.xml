@@ -1,4 +1,4 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <!-- Base application theme. -->
     <style name="Theme.KreamClone" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
@@ -21,6 +21,11 @@
         <item name="windowSplashScreenAnimatedIcon">@drawable/splash_logo</item>
         <item name="windowSplashScreenAnimationDuration">100</item>
         <item name="postSplashScreenTheme">@style/Theme.KreamClone</item>
+    </style>
+
+    <style name="Theme.KreamClone.tabSelected" parent="TextAppearance.Design.Tab">
+        <!-- tabLayout Style -->
+        <item name="android:textStyle">bold</item>
     </style>
 
 </resources>
