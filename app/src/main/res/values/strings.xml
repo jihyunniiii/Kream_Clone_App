@@ -8,4 +8,6 @@
     <string name="menu_my">MY</string>
     <!-- home -->
     <string name="home_notification">알림</string>
+    <!-- women -->
+    <string name="details">더보기</string>
 </resources>
