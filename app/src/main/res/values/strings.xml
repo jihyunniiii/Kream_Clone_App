@@ -10,4 +10,6 @@
     <string name="home_notification">알림</string>
     <!-- women -->
     <string name="details">더보기</string>
+    <!-- item product -->
+    <string name="quick_delivery">빠른배송</string>
 </resources>
