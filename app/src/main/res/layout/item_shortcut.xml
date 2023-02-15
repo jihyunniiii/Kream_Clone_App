@@ -5,7 +5,8 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp">
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/civ_item_shortcut_image1"
@@ -23,12 +24,12 @@
 
         <TextView
             android:id="@+id/tv_item_shortcut_title1"
-            android:layout_width="wrap_content"
+            android:layout_width="70dp"
             android:layout_height="wrap_content"
             android:layout_marginVertical="5dp"
+            android:gravity="center"
             android:textColor="@color/black"
             android:textSize="12sp"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/civ_item_shortcut_image1"
             app:layout_constraintStart_toStartOf="@+id/civ_item_shortcut_image1"
             app:layout_constraintTop_toBottomOf="@+id/civ_item_shortcut_image1"
@@ -49,9 +50,10 @@
 
         <TextView
             android:id="@+id/tv_item_shortcut_title2"
-            android:layout_width="wrap_content"
+            android:layout_width="70dp"
             android:layout_height="wrap_content"
             android:layout_marginVertical="5dp"
+            android:gravity="center"
             android:textColor="@color/black"
             android:textSize="12sp"
             app:layout_constraintEnd_toEndOf="@+id/civ_item_shortcut_image2"
@@ -74,9 +76,10 @@
 
         <TextView
             android:id="@+id/tv_item_shortcut_title3"
-            android:layout_width="wrap_content"
+            android:layout_width="70dp"
             android:layout_height="wrap_content"
             android:layout_marginVertical="5dp"
+            android:gravity="center"
             android:textColor="@color/black"
             android:textSize="12sp"
             app:layout_constraintEnd_toEndOf="@+id/civ_item_shortcut_image3"
@@ -99,9 +102,10 @@
 
         <TextView
             android:id="@+id/tv_item_shortcut_title4"
-            android:layout_width="wrap_content"
+            android:layout_width="70dp"
             android:layout_height="wrap_content"
             android:layout_marginVertical="5dp"
+            android:gravity="center"
             android:textColor="@color/black"
             android:textSize="12sp"
             app:layout_constraintEnd_toEndOf="@+id/civ_item_shortcut_image4"
@@ -125,9 +129,10 @@
 
         <TextView
             android:id="@+id/tv_item_shortcut_title5"
-            android:layout_width="wrap_content"
+            android:layout_width="70dp"
             android:layout_height="wrap_content"
             android:layout_marginVertical="5dp"
+            android:gravity="center"
             android:textColor="@color/black"
             android:textSize="12sp"
             app:layout_constraintEnd_toEndOf="@+id/civ_item_shortcut_image5"
