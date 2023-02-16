@@ -17,7 +17,7 @@ const val type_line = 4
 const val type_quick_delivery = 5
 const val type_no_quick_delivery = 6
 
-class WomenAdapter(context: Context) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+class HomeAdapter(context: Context) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     private val inflater by lazy { LayoutInflater.from(context) }
     private var itemList: List<HomeItem> = emptyList()
 

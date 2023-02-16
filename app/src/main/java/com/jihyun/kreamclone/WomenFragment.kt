@@ -12,7 +12,7 @@ class WomenFragment : Fragment() {
     private val binding: FragmentWomenBinding
         get() = requireNotNull(_binding)
 
-    private var womenShortCutList = listOf(
+    private var womenList = listOf(
         HomeItem(
             type_shortcut,
             listOf(
@@ -168,9 +168,9 @@ class WomenFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val shortcutAdapter = WomenAdapter(requireContext())
-        binding.rvWomen.adapter = shortcutAdapter
-        shortcutAdapter.setItemList(womenShortCutList)
+        val womenAdapter = HomeAdapter(requireContext())
+        binding.rvWomen.adapter = womenAdapter
+        womenAdapter.setItemList(womenList)
     }
 
     override fun onDestroyView() {
