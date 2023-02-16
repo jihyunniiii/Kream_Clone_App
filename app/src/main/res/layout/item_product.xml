@@ -39,7 +39,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:textColor="@color/black"
-            android:textSize="13sp"
+            android:textSize="14sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="@+id/iv_item_product_image1"
             app:layout_constraintTop_toBottomOf="@+id/iv_item_product_image1"
@@ -81,7 +81,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingHorizontal="3dp"
-                android:text="@string/quick_delivery"
+                android:text="@string/item_product_quick_delivery"
                 android:textColor="@color/green"
                 android:textSize="10sp"
                 app:layout_constraintStart_toEndOf="@+id/iv_quick_delivery_image1"
@@ -95,7 +95,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:textColor="@color/black"
-            android:textSize="13sp"
+            android:textSize="14sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="@+id/iv_item_product_image1"
             app:layout_constraintTop_toBottomOf="@+id/layout_quick_delivery1"
@@ -106,12 +106,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
+            android:text="@string/item_product_immediate_purchase_price"
             android:textColor="@color/dark_gray"
             android:textSize="10sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="@+id/iv_item_product_image1"
-            app:layout_constraintTop_toBottomOf="@+id/tv_item_product_price1"
-            tools:text="즉시 구매가" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_item_product_price1" />
 
         <ImageView
             android:id="@+id/iv_item_product_image2"
@@ -145,7 +145,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:textColor="@color/black"
-            android:textSize="13sp"
+            android:textSize="14sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="@+id/iv_item_product_image2"
             app:layout_constraintTop_toBottomOf="@+id/iv_item_product_image2"
@@ -187,7 +187,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingHorizontal="3dp"
-                android:text="@string/quick_delivery"
+                android:text="@string/item_product_quick_delivery"
                 android:textColor="@color/green"
                 android:textSize="10sp"
                 app:layout_constraintStart_toEndOf="@+id/iv_quick_delivery_image2"
@@ -201,7 +201,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:textColor="@color/black"
-            android:textSize="13sp"
+            android:textSize="14sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="@+id/iv_item_product_image2"
             app:layout_constraintTop_toBottomOf="@+id/layout_quick_delivery2"
@@ -212,12 +212,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
+            android:text="@string/item_product_immediate_purchase_price"
             android:textColor="@color/dark_gray"
             android:textSize="10sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="@+id/iv_item_product_image2"
-            app:layout_constraintTop_toBottomOf="@+id/tv_item_product_price2"
-            tools:text="즉시 구매가" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_item_product_price2" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

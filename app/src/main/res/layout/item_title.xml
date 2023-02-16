@@ -28,7 +28,7 @@
             android:layout_marginTop="3dp"
             android:layout_marginBottom="15dp"
             android:textColor="@color/dark_gray"
-            android:textSize="15sp"
+            android:textSize="14sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_item_title_title"
@@ -40,9 +40,9 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="15dp"
-            android:text="@string/details"
+            android:text="@string/item_title_details"
             android:textColor="@color/dark_gray"
-            android:textSize="12sp"
+            android:textSize="13sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
