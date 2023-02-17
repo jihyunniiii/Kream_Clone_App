@@ -23,108 +23,135 @@ class WomenFragment : Fragment() {
                 R.drawable.women_small_luxury
             ),
             listOf("New", "럭셔리", "인기 신발", "셀럽픽", "스몰 럭셔리"),
-            listOf(null),
-            listOf(null),
+            null,
             listOf(null)
         ),
         HomeItem(
             type_line,
             listOf(null),
             listOf(null),
-            listOf(null),
-            listOf(null),
+            null,
             listOf(null)
         ),
         HomeItem(
             type_title,
             listOf(null),
             listOf("For Women"),
-            listOf("여성 추천 상품"),
-            listOf(null),
+            "여성 추천 상품",
             listOf(null)
         ),
         HomeItem(
-            type_product,
-            listOf(R.drawable.women_for_women_product1, R.drawable.women_for_women_product2),
+            type_product_list,
+            listOf(null),
+            listOf(null),
+            null,
             listOf(
-                "(W) Nike Classic Cortez Leather White Black",
-                "Nike x Stussy Washed Fleece Pants Black (DO5296-010)"
-            ),
-            listOf("Nike", "Nike"),
-            listOf("176,000원", "119,000원"),
-            listOf(type_quick_delivery, type_no_quick_delivery)
+                ProductItem(
+                    product_type_general,
+                    R.drawable.women_for_women_product1,
+                    "Nike",
+                    "(W) Nike Classic Cortez Leather White Black",
+                    "176,000원",
+                    option_exist
+                ),
+                ProductItem(
+                    product_type_general,
+                    R.drawable.women_for_women_product2,
+                    "Nike",
+                    "Nike x Stussy Washed Fleece Pants Black (DO5296-010)",
+                    "119,000원",
+                    option_no_exist
+                )
+            )
         ),
         HomeItem(
             type_line,
             listOf(null),
             listOf(null),
-            listOf(null),
-            listOf(null),
+            null,
             listOf(null)
         ),
         HomeItem(
             type_title,
             listOf(null),
             listOf("New Arrivals"),
-            listOf("신규 등록 여성 상품"),
-            listOf(null),
+            "신규 등록 여성 상품",
             listOf(null)
         ),
         HomeItem(
-            type_product,
-            listOf(R.drawable.women_new_arrivals_product1, R.drawable.women_new_arrivals_product2),
+            type_product_list,
+            listOf(null),
+            listOf(null),
+            null,
             listOf(
-                "(W) Jordan 1 Zoom Air CMFT 2 Phantom University Blue",
-                "Nike x Stussy Air Penny II Fossil"
-            ),
-            listOf("Jordan", "Nike"),
-            listOf("180,000원", "255,000원"),
-            listOf(type_no_quick_delivery, type_no_quick_delivery)
+                ProductItem(
+                    product_type_general,
+                    R.drawable.women_new_arrivals_product1,
+                    "Jordan",
+                    "(W) Jordan 1 Zoom Air CMFT 2 Phantom University Blue",
+                    "180,000원",
+                    option_no_exist
+                ),
+                ProductItem(
+                    product_type_general,
+                    R.drawable.women_new_arrivals_product2,
+                    "Nike",
+                    "Nike x Stussy Air Penny II Fossil",
+                    "255,000원",
+                    option_no_exist
+                )
+            )
         ),
         HomeItem(
             type_line,
             listOf(null),
             listOf(null),
-            listOf(null),
-            listOf(null),
+            null,
             listOf(null)
         ),
         HomeItem(
             type_title,
             listOf(null),
             listOf("Rising Sneakers"),
-            listOf("인기 상승 스니커즈"),
-            listOf(null),
+            "인기 상승 스니커즈",
             listOf(null)
         ),
         HomeItem(
-            type_product,
+            type_product_list,
+            listOf(null),
+            listOf(null),
+            null,
             listOf(
-                R.drawable.women_rising_sneakers_product1,
-                R.drawable.women_rising_sneakers_product2
-            ),
-            listOf(
-                "(W) Adidas Gazelle Bold Super Pop",
-                "(GS) Nike Court Borough Low 2 Light Smoke Grey"
-            ),
-            listOf("Adidas", "Nike"),
-            listOf("280,000원", "60,000원"),
-            listOf(type_no_quick_delivery, type_quick_delivery)
+                ProductItem(
+                    product_type_general,
+                    R.drawable.women_rising_sneakers_product1,
+                    "Adidas",
+                    "(W) Adidas Gazelle Bold Super Pop",
+                    "280,000원",
+                    option_no_exist
+                ),
+                ProductItem(
+                    product_type_general,
+                    R.drawable.women_rising_sneakers_product2,
+                    "Nike",
+                    "(GS) Nike Court Borough Low 2 Light Smoke Grey",
+                    "60,000원",
+                    option_exist
+                )
+            )
         ),
         HomeItem(
             type_line,
             listOf(null),
             listOf(null),
-            listOf(null),
-            listOf(null),
+            null,
             listOf(null)
         ),
         HomeItem(
             type_title,
             listOf(null),
             listOf("Brand Focus"),
-            listOf("인기 여성 브랜드"),
-            listOf(null),
+            "인기 여성 브랜드",
             listOf(null)
         ),
         HomeItem(
@@ -137,8 +164,7 @@ class WomenFragment : Fragment() {
                 R.drawable.women_brand_focus_image5
             ),
             listOf("생로랑", "가니", "마르지엘라", "비비안\n웨스트우드", "디올"),
-            listOf(null),
-            listOf(null),
+            null,
             listOf(null)
         ),
         HomeItem(
@@ -151,8 +177,7 @@ class WomenFragment : Fragment() {
                 R.drawable.women_brand_focus_image10
             ),
             listOf("셀린느", "텔파", "프라다", "이자벨 마랑", "다이슨"),
-            listOf(null),
-            listOf(null),
+            null,
             listOf(null)
         )
     )
@@ -168,7 +193,7 @@ class WomenFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val womenAdapter = HomeAdapter(requireContext())
+        val womenAdapter = HomeItemAdapter(requireContext())
         binding.rvWomen.adapter = womenAdapter
         womenAdapter.setItemList(womenList)
     }
