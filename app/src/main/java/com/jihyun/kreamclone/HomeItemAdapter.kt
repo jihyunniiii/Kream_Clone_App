@@ -56,6 +56,7 @@ class HomeItemAdapter(context: Context) : RecyclerView.Adapter<RecyclerView.View
             }
             type_product_list -> {
                 (holder as productListViewHolder).onBind(itemList[position])
+                holder.setIsRecyclable(false)
             }
             type_line -> {
                 (holder as lineViewHolder).onBind(itemList[position])
