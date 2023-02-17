@@ -5,7 +5,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="350dp">
 
         <ImageView
             android:id="@+id/iv_item_product_image"
@@ -49,6 +49,8 @@
             android:layout_width="210dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:maxLines="2"
             android:textColor="@color/black"
             android:textSize="14sp"
             app:layout_constraintStart_toStartOf="@+id/iv_item_product_image"
@@ -108,7 +110,6 @@
             android:text="@string/item_product_immediate_purchase_price"
             android:textColor="@color/dark_gray"
             android:textSize="11sp"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="@+id/iv_item_product_image"
             app:layout_constraintTop_toBottomOf="@+id/tv_item_product_price" />
 
