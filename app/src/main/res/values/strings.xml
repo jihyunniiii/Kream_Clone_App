@@ -8,4 +8,9 @@
     <string name="menu_my">MY</string>
     <!-- home -->
     <string name="home_notification">알림</string>
+    <!-- item title -->
+    <string name="item_title_details">더보기</string>
+    <!-- item product -->
+    <string name="item_product_quick_delivery">빠른배송</string>
+    <string name="item_product_immediate_purchase_price">즉시 구매가</string>
 </resources>

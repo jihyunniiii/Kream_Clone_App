@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_item_shortcut_image1"
+            android:layout_width="70dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintDimensionRatio="1"
+            app:layout_constraintEnd_toStartOf="@+id/civ_item_shortcut_image2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/women_new" />
+
+        <TextView
+            android:id="@+id/tv_item_shortcut_title1"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/civ_item_shortcut_image1"
+            app:layout_constraintStart_toStartOf="@+id/civ_item_shortcut_image1"
+            app:layout_constraintTop_toBottomOf="@+id/civ_item_shortcut_image1"
+            tools:text="New" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_item_shortcut_image2"
+            android:layout_width="70dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintDimensionRatio="1"
+            app:layout_constraintEnd_toStartOf="@+id/civ_item_shortcut_image3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/civ_item_shortcut_image1"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/women_luxury" />
+
+        <TextView
+            android:id="@+id/tv_item_shortcut_title2"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/civ_item_shortcut_image2"
+            app:layout_constraintStart_toStartOf="@+id/civ_item_shortcut_image2"
+            app:layout_constraintTop_toBottomOf="@+id/civ_item_shortcut_image2"
+            tools:text="럭셔리" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_item_shortcut_image3"
+            android:layout_width="70dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintDimensionRatio="1"
+            app:layout_constraintEnd_toStartOf="@+id/civ_item_shortcut_image4"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/civ_item_shortcut_image2"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/women_popular_shoes" />
+
+        <TextView
+            android:id="@+id/tv_item_shortcut_title3"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/civ_item_shortcut_image3"
+            app:layout_constraintStart_toStartOf="@+id/civ_item_shortcut_image3"
+            app:layout_constraintTop_toBottomOf="@+id/civ_item_shortcut_image3"
+            tools:text="인기 신발" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_item_shortcut_image4"
+            android:layout_width="70dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintDimensionRatio="1"
+            app:layout_constraintEnd_toStartOf="@+id/civ_item_shortcut_image5"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/civ_item_shortcut_image3"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/women_celeb_pick" />
+
+        <TextView
+            android:id="@+id/tv_item_shortcut_title4"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/civ_item_shortcut_image4"
+            app:layout_constraintStart_toStartOf="@+id/civ_item_shortcut_image4"
+            app:layout_constraintTop_toBottomOf="@+id/civ_item_shortcut_image4"
+            tools:text="셀럽픽" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_item_shortcut_image5"
+            android:layout_width="70dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="15dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintDimensionRatio="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/civ_item_shortcut_image4"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/women_small_luxury" />
+
+        <TextView
+            android:id="@+id/tv_item_shortcut_title5"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/civ_item_shortcut_image5"
+            app:layout_constraintStart_toStartOf="@+id/civ_item_shortcut_image5"
+            app:layout_constraintTop_toBottomOf="@+id/civ_item_shortcut_image5"
+            tools:text="스몰 럭셔리" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
