@@ -24,21 +24,24 @@ class MenFragment : Fragment() {
             ),
             listOf("New", "럭셔리", "인기 신발", "셀럽픽", "스웨트 셋업"),
             null,
-            listOf(null)
+            listOf(null),
+            null
         ),
         HomeItem(
             type_line,
             listOf(null),
             listOf(null),
             null,
-            listOf(null)
+            listOf(null),
+            null
         ),
         HomeItem(
             type_title,
             listOf(null),
             listOf("For Men"),
             "남성 추천 상품",
-            listOf(null)
+            listOf(null),
+            detail_exist
         ),
         HomeItem(
             type_product_list,
@@ -110,21 +113,24 @@ class MenFragment : Fragment() {
                     "533,000원",
                     option_exist
                 )
-            )
+            ),
+            null
         ),
         HomeItem(
             type_line,
             listOf(null),
             listOf(null),
             null,
-            listOf(null)
+            listOf(null),
+            null
         ),
         HomeItem(
             type_title,
             listOf(null),
             listOf("New Arrivals"),
             "신규 등록 남성 상품",
-            listOf(null)
+            listOf(null),
+            detail_exist
         ),
         HomeItem(
             type_product_list,
@@ -196,21 +202,24 @@ class MenFragment : Fragment() {
                     "509,000원",
                     option_no_exist
                 )
-            )
+            ),
+            null
         ),
         HomeItem(
             type_line,
             listOf(null),
             listOf(null),
             null,
-            listOf(null)
+            listOf(null),
+            null
         ),
         HomeItem(
             type_title,
             listOf(null),
             listOf("Rising Sneakers"),
             "인기 상승 스니커즈",
-            listOf(null)
+            listOf(null),
+            detail_no_exist
         ),
         HomeItem(
             type_product_list,
@@ -282,21 +291,24 @@ class MenFragment : Fragment() {
                     "337,000원",
                     option_exist
                 )
-            )
+            ),
+            null
         ),
         HomeItem(
             type_line,
             listOf(null),
             listOf(null),
             null,
-            listOf(null)
+            listOf(null),
+            null
         ),
         HomeItem(
             type_title,
             listOf(null),
             listOf("Brand Focus"),
             "인기 남성 브랜드",
-            listOf(null)
+            listOf(null),
+            detail_no_exist
         ),
         HomeItem(
             type_shortcut,
@@ -309,7 +321,8 @@ class MenFragment : Fragment() {
             ),
             listOf("파타고니아", "소니", "바버", "보테가 베네타", "피어오브갓"),
             null,
-            listOf(null)
+            listOf(null),
+            null
         ),
         HomeItem(
             type_shortcut,
@@ -322,7 +335,8 @@ class MenFragment : Fragment() {
             ),
             listOf("아크테릭스", "우영미", "톰브라운", "C.P.컴퍼니", "야스히로"),
             null,
-            listOf(null)
+            listOf(null),
+            null
         )
     )
 

@@ -7,9 +7,9 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.jihyun.kreamclone.databinding.ItemGeneralProductBinding
 
-const val option_exist = 5
-const val option_no_exist = 6
-const val product_type_general = 7
+const val option_exist = 7
+const val option_no_exist = 8
+const val product_type_general = 9
 
 class ProductItemAdapter(context: Context) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     private val inflater by lazy { LayoutInflater.from(context) }
