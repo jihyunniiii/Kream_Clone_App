@@ -7,5 +7,6 @@ data class HomeItem(
     @DrawableRes val image: List<Int?>,
     val title: List<String?>,
     val subTitle: String?,
-    val product: List<ProductItem?>
+    val product: List<ProductItem?>,
+    val detail: Int?
 )

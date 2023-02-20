@@ -2,6 +2,7 @@ package com.jihyun.kreamclone
 
 import android.content.Context
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.jihyun.kreamclone.databinding.ItemLineBinding
@@ -13,6 +14,8 @@ const val type_shortcut = 1
 const val type_title = 2
 const val type_product_list = 3
 const val type_line = 4
+const val detail_exist = 5
+const val detail_no_exist = 6
 
 class HomeItemAdapter(context: Context) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     private val inflater by lazy { LayoutInflater.from(context) }
@@ -95,6 +98,12 @@ class HomeItemAdapter(context: Context) : RecyclerView.Adapter<RecyclerView.View
         fun onBind(data: HomeItem) {
             binding.tvItemTitleTitle.text = data.title[0]
             binding.tvItemTitleSubTitle.text = data.subTitle
+            binding.tvItemTitleDetails.visibility =
+                if (data.detail == detail_exist) {
+                    View.VISIBLE
+                } else {
+                    View.GONE
+                }
         }
     }
 

@@ -24,21 +24,24 @@ class WomenFragment : Fragment() {
             ),
             listOf("New", "럭셔리", "인기 신발", "셀럽픽", "스몰 럭셔리"),
             null,
-            listOf(null)
+            listOf(null),
+            null
         ),
         HomeItem(
             type_line,
             listOf(null),
             listOf(null),
             null,
-            listOf(null)
+            listOf(null),
+            null
         ),
         HomeItem(
             type_title,
             listOf(null),
             listOf("For Women"),
             "여성 추천 상품",
-            listOf(null)
+            listOf(null),
+            detail_exist
         ),
         HomeItem(
             type_product_list,
@@ -110,21 +113,24 @@ class WomenFragment : Fragment() {
                     "240,000원",
                     option_exist
                 )
-            )
+            ),
+            null
         ),
         HomeItem(
             type_line,
             listOf(null),
             listOf(null),
             null,
-            listOf(null)
+            listOf(null),
+            null
         ),
         HomeItem(
             type_title,
             listOf(null),
             listOf("Rising Sneakers"),
             "인기 상승 스니커즈",
-            listOf(null)
+            listOf(null),
+            detail_no_exist
         ),
         HomeItem(
             type_product_list,
@@ -196,21 +202,24 @@ class WomenFragment : Fragment() {
                     "184,000원",
                     option_exist
                 )
-            )
+            ),
+            null
         ),
         HomeItem(
             type_line,
             listOf(null),
             listOf(null),
             null,
-            listOf(null)
+            listOf(null),
+            null
         ),
         HomeItem(
             type_title,
             listOf(null),
             listOf("New Arrivals"),
             "신규 등록 여성 상품",
-            listOf(null)
+            listOf(null),
+            detail_exist
         ),
         HomeItem(
             type_product_list,
@@ -282,21 +291,24 @@ class WomenFragment : Fragment() {
                     "180,000원",
                     option_no_exist
                 )
-            )
+            ),
+            null
         ),
         HomeItem(
             type_line,
             listOf(null),
             listOf(null),
             null,
-            listOf(null)
+            listOf(null),
+            null
         ),
         HomeItem(
             type_title,
             listOf(null),
             listOf("Brand Focus"),
             "인기 여성 브랜드",
-            listOf(null)
+            listOf(null),
+            detail_no_exist
         ),
         HomeItem(
             type_shortcut,
@@ -309,7 +321,8 @@ class WomenFragment : Fragment() {
             ),
             listOf("생로랑", "가니", "마르지엘라", "비비안\n웨스트우드", "디올"),
             null,
-            listOf(null)
+            listOf(null),
+            null
         ),
         HomeItem(
             type_shortcut,
@@ -322,7 +335,8 @@ class WomenFragment : Fragment() {
             ),
             listOf("셀린느", "텔파", "프라다", "이자벨 마랑", "다이슨"),
             null,
-            listOf(null)
+            listOf(null),
+            null
         )
     )
 
