@@ -8,5 +8,6 @@ data class ProductItem(
     val brand: String,
     val name: String,
     val price: String,
+    val sale: String?,
     val option: Int
 )

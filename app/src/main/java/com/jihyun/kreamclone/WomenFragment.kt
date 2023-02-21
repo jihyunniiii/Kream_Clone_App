@@ -55,6 +55,7 @@ class WomenFragment : Fragment() {
                     "Nike",
                     "(W) Nike Classic Cortez Leather White Black",
                     "176,000원",
+                    null,
                     option_exist
                 ),
                 ProductItem(
@@ -63,6 +64,7 @@ class WomenFragment : Fragment() {
                     "Nike",
                     "Nike x Stussy Washed Fleece Pants Black (DO5296-010)",
                     "119,000원",
+                    null,
                     option_no_exist
                 ),
                 ProductItem(
@@ -71,6 +73,7 @@ class WomenFragment : Fragment() {
                     "Charles Jeffrey Loverboy",
                     "Charles Jeffrey Loverboy Chunky Ears Beanie Keyring Ecru",
                     "179,000원",
+                    null,
                     option_no_exist
                 ),
                 ProductItem(
@@ -79,6 +82,7 @@ class WomenFragment : Fragment() {
                     "Onitsuka Tiger",
                     "Onitsuka Tiger Mexico 66 Yellow Black",
                     "180,000원",
+                    null,
                     option_no_exist
                 ),
                 ProductItem(
@@ -87,6 +91,7 @@ class WomenFragment : Fragment() {
                     "Maison Kitsune",
                     "Maison Kitsune x Laneige Crossbody Bag",
                     "240,000원",
+                    null,
                     option_exist
                 ),
                 ProductItem(
@@ -95,6 +100,7 @@ class WomenFragment : Fragment() {
                     "Stussy",
                     "Stussy Swirl Knit Bucket Hat Black",
                     "110,000원",
+                    null,
                     option_no_exist
                 ),
                 ProductItem(
@@ -103,6 +109,7 @@ class WomenFragment : Fragment() {
                     "Adidas",
                     "Adidas Gazelle Dark Green Cream White",
                     "125,000원",
+                    null,
                     option_exist
                 ),
                 ProductItem(
@@ -111,6 +118,7 @@ class WomenFragment : Fragment() {
                     "Nike",
                     "(W) Nike Air Force 1 '07 LX Game Royal Sail",
                     "240,000원",
+                    null,
                     option_exist
                 )
             ),
@@ -144,6 +152,7 @@ class WomenFragment : Fragment() {
                     "Adidas",
                     "(W) Adidas Gazelle Bold Super Pop",
                     "280,000원",
+                    null,
                     option_no_exist
                 ),
                 ProductItem(
@@ -152,6 +161,7 @@ class WomenFragment : Fragment() {
                     "Nike",
                     "(GS) Nike Court Borough Low 2 Light Smoke Grey",
                     "60,000원",
+                    null,
                     option_exist
                 ),
                 ProductItem(
@@ -160,6 +170,7 @@ class WomenFragment : Fragment() {
                     "Nike",
                     "(W) Nike Cortez White and Black",
                     "115,000원",
+                    null,
                     option_no_exist
                 ),
                 ProductItem(
@@ -168,6 +179,7 @@ class WomenFragment : Fragment() {
                     "Adidas",
                     "Adidas Aloha Super Light Orchid Core Black",
                     "175,000원",
+                    null,
                     option_no_exist
                 ),
                 ProductItem(
@@ -176,6 +188,7 @@ class WomenFragment : Fragment() {
                     "Adidas",
                     "Adidas Joggen OG Bliss Lilac - Size? Exclusive",
                     "350,000원",
+                    null,
                     option_no_exist
                 ),
                 ProductItem(
@@ -184,6 +197,7 @@ class WomenFragment : Fragment() {
                     "Nike",
                     "(W) Nike Zoom Vomero 5 Pure Platinum Metallic Silver",
                     "230,000원",
+                    null,
                     option_no_exist
                 ),
                 ProductItem(
@@ -192,6 +206,7 @@ class WomenFragment : Fragment() {
                     "New Balance",
                     "(W) New Balance x JJJJound 991 Made in UK Grey",
                     "599,000원",
+                    null,
                     option_no_exist
                 ),
                 ProductItem(
@@ -200,6 +215,7 @@ class WomenFragment : Fragment() {
                     "Jordan",
                     "Jordan 1 x Union KO Low White",
                     "184,000원",
+                    null,
                     option_exist
                 )
             ),
@@ -233,6 +249,7 @@ class WomenFragment : Fragment() {
                     "Jordan",
                     "(W) Jordan 1 Zoom Air CMFT 2 Phantom University Blue",
                     "180,000원",
+                    null,
                     option_no_exist
                 ),
                 ProductItem(
@@ -241,6 +258,7 @@ class WomenFragment : Fragment() {
                     "Nike",
                     "Nike x Stussy Air Penny II Fossil",
                     "255,000원",
+                    null,
                     option_no_exist
                 ),
                 ProductItem(
@@ -249,6 +267,7 @@ class WomenFragment : Fragment() {
                     "Onitsuka Tiger",
                     "Onitsuka Tiger Mexico 66 Black White",
                     "275,000원",
+                    null,
                     option_no_exist
                 ),
                 ProductItem(
@@ -257,6 +276,7 @@ class WomenFragment : Fragment() {
                     "Nike",
                     "(W) Nike NSW Essential High Waist Leggings Black - Asia",
                     "40,000원",
+                    null,
                     option_no_exist
                 ),
                 ProductItem(
@@ -265,6 +285,7 @@ class WomenFragment : Fragment() {
                     "Chanel",
                     "Chanel Classic Zipped Coin Purse Lamskin & Gold Light Grey",
                     "900,000원",
+                    null,
                     option_no_exist
                 ),
                 ProductItem(
@@ -273,6 +294,7 @@ class WomenFragment : Fragment() {
                     "Maison Kitsune",
                     "(W) Maison Kitsune Dressed Fox Print Easy T-shirt Black",
                     "125,000원",
+                    null,
                     option_no_exist
                 ),
                 ProductItem(
@@ -281,6 +303,7 @@ class WomenFragment : Fragment() {
                     "Nike",
                     "Nike x Stussy LS Knit Sweater Fossil (DR2894-238)",
                     "550,000원",
+                    null,
                     option_no_exist
                 ),
                 ProductItem(
@@ -289,6 +312,7 @@ class WomenFragment : Fragment() {
                     "Jacquemus",
                     "(W) Jacquemus La Maille Neve Fluffy Charm Logo Cardigan Pink",
                     "180,000원",
+                    null,
                     option_no_exist
                 )
             ),
