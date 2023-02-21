@@ -11,4 +11,7 @@
     <color name="dark_gray">#FFA0A0A0</color>
     <color name="green">#FF31b46e</color>
     <color name="light_green">#1731b46e</color>
+    <color name="purple">#FF7C72EE</color>
+    <color name="light_purple">#177C72EE</color>
+    <color name="red">#FFF15746</color>
 </resources>

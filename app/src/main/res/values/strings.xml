@@ -10,7 +10,10 @@
     <string name="home_notification">알림</string>
     <!-- item title -->
     <string name="item_title_details">더보기</string>
-    <!-- item product -->
-    <string name="item_product_quick_delivery">빠른배송</string>
-    <string name="item_product_immediate_purchase_price">즉시 구매가</string>
+    <!-- item general product -->
+    <string name="item_general_product_quick_delivery">빠른배송</string>
+    <string name="item_general_product_immediate_purchase_price">즉시 구매가</string>
+    <!-- item brand product -->
+    <string name="item_brand_product_purchase_price">구매가</string>
+    <string name="item_brand_product_brand_delivery">브랜드배송</string>
 </resources>
