@@ -19,7 +19,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:src="@drawable/women_for_women_product1" />
+            tools:src="@drawable/brand_new_arrivals_product1" />
 
         <ImageView
             android:id="@+id/iv_item_brand_product_bookmark"
@@ -42,7 +42,7 @@
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="@+id/iv_item_brand_product_image"
             app:layout_constraintTop_toBottomOf="@+id/iv_item_brand_product_image"
-            tools:text="Nike" />
+            tools:text="Cavish" />
 
         <ImageView
             android:id="@+id/iv_item_brand_check"
@@ -66,7 +66,7 @@
             android:textSize="14sp"
             app:layout_constraintStart_toStartOf="@+id/iv_item_brand_product_image"
             app:layout_constraintTop_toBottomOf="@+id/tv_item_brand_product_brand"
-            tools:text="(W) Nike Classic Cortez Leather White Black" />
+            tools:text="Cavish Big Seller Logo Ball Cap Charcoal - 23SS" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/layout_item_brand_delivery"
@@ -95,7 +95,7 @@
             android:id="@+id/tv_item_brand_discount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingRight="2dp"
+            android:paddingRight="5dp"
             android:textColor="@color/red"
             android:textSize="15sp"
             app:layout_constraintStart_toStartOf="@+id/iv_item_brand_product_image"
@@ -112,7 +112,7 @@
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/tv_item_brand_discount"
             app:layout_constraintTop_toBottomOf="@+id/layout_item_brand_delivery"
-            tools:text="176,000원" />
+            tools:text="33,100원" />
 
         <TextView
             android:id="@+id/tv_item_brand_product_immediate"
