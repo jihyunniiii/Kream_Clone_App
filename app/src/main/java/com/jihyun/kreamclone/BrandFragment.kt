@@ -123,6 +123,258 @@ class BrandFragment : Fragment() {
                 )
             ),
             null
+        ),
+        HomeItem(
+            type_line,
+            listOf(null),
+            listOf(null),
+            null,
+            listOf(null),
+            null
+        ),
+        HomeItem(
+            type_title,
+            listOf(null),
+            listOf("Brand Focus"),
+            "추천 브랜드",
+            listOf(null),
+            detail_no_exist
+        ),
+        HomeItem(
+            type_shortcut,
+            listOf(
+                R.drawable.brand_brand_focus_image1,
+                R.drawable.brand_brand_focus_image2,
+                R.drawable.brand_brand_focus_image3,
+                R.drawable.brand_brand_focus_image4,
+                R.drawable.brand_brand_focus_image5
+            ),
+            listOf("폴리테루", "크래커", "소니", "킨", "사파리스팟"),
+            null,
+            listOf(null),
+            null
+        ),
+        HomeItem(
+            type_shortcut,
+            listOf(
+                R.drawable.brand_brand_focus_image6,
+                R.drawable.brand_brand_focus_image7,
+                R.drawable.brand_brand_focus_image8,
+                R.drawable.brand_brand_focus_image9,
+                R.drawable.brand_brand_focus_image10
+            ),
+            listOf("에스티유", "렉토", "써저리", "이미스", "더뮤지엄비어터"),
+            null,
+            listOf(null),
+            null
+        ),
+        HomeItem(
+            type_shortcut,
+            listOf(
+                R.drawable.brand_brand_focus_image11,
+                R.drawable.brand_brand_focus_image12,
+                R.drawable.brand_brand_focus_image13,
+                R.drawable.brand_brand_focus_image14,
+                R.drawable.brand_brand_focus_image15
+            ),
+            listOf("넘버링", "인스턴트펑크", "스쿠도", "미수아바흐브", "2000아카이브스"),
+            null,
+            listOf(null),
+            null
+        ),
+        HomeItem(
+            type_line,
+            listOf(null),
+            listOf(null),
+            null,
+            listOf(null),
+            null
+        ),
+        HomeItem(
+            type_title,
+            listOf(null),
+            listOf("Best Jackets Now"),
+            "지금 인기 많은 재킷",
+            listOf(null),
+            detail_no_exist
+        ),
+        HomeItem(
+            type_product_list,
+            listOf(null),
+            listOf(null),
+            null,
+            listOf(
+                ProductItem(
+                    product_type_brand,
+                    R.drawable.brand_best_jackets_now_product1,
+                    "STU",
+                    "[KREAM Exclusive] Stu Denim Jacket Black",
+                    "279,000원",
+                    null,
+                    option_no_exist
+                ),
+                ProductItem(
+                    product_type_brand,
+                    R.drawable.brand_best_jackets_now_product2,
+                    "Surgery",
+                    "Surgery Bone Cutting Varsity Jacket Ver.2 Black White",
+                    "398,000원",
+                    null,
+                    option_no_exist
+                ),
+                ProductItem(
+                    product_type_general,
+                    R.drawable.brand_best_jackets_now_product3,
+                    "Ader Error",
+                    "Ader Error x Converse Shapes Varsity Jacket Cobalt",
+                    "417,000원",
+                    null,
+                    option_exist
+                ),
+                ProductItem(
+                    product_type_brand,
+                    R.drawable.brand_best_jackets_now_product4,
+                    "KANGHYUK",
+                    "Kanghyuk Hooded Bomber Jacket Black",
+                    "490,000원",
+                    null,
+                    option_no_exist
+                ),
+                ProductItem(
+                    product_type_brand,
+                    R.drawable.brand_best_jackets_now_product5,
+                    "Recto",
+                    "[KREAM Exclusive] Recto 70S Dog Tooth Check Wool Blazer Brown",
+                    "528,000원",
+                    null,
+                    option_no_exist
+                ),
+                ProductItem(
+                    product_type_general,
+                    R.drawable.brand_best_jackets_now_product6,
+                    "Sansan Gear",
+                    "Sansan Gear Zipper Jacket Black - 22FW",
+                    "319,000원",
+                    null,
+                    option_no_exist
+                ),
+                ProductItem(
+                    product_type_brand,
+                    R.drawable.brand_best_jackets_now_product7,
+                    "STU",
+                    "[KREAM Exclusive] Stu Embroidered Windbreaker Blue",
+                    "289,000원",
+                    null,
+                    option_no_exist
+                ),
+                ProductItem(
+                    product_type_brand,
+                    R.drawable.brand_best_jackets_now_product8,
+                    "The Museum Visitor",
+                    "The Museum Visitor Children Printed Fleece Ivory - 22FW",
+                    "257,000원",
+                    null,
+                    option_no_exist
+                )
+            ),
+            null
+        ),
+        HomeItem(
+            type_line,
+            listOf(null),
+            listOf(null),
+            null,
+            listOf(null),
+            null
+        ),
+        HomeItem(
+            type_title,
+            listOf(null),
+            listOf("Best Sweats & Hoodie Now"),
+            "지금 인기 많은 후드 & 스웨트셔츠",
+            listOf(null),
+            detail_no_exist
+        ),
+        HomeItem(
+            type_product_list,
+            listOf(null),
+            listOf(null),
+            null,
+            listOf(
+                ProductItem(
+                    product_type_brand,
+                    R.drawable.brand_best_sweats_hoodie_now_product1,
+                    "Cavish",
+                    "Cavish Pictorial Zip Up Hoodie Ash - 23SS",
+                    "99,000원",
+                    "15%",
+                    option_exist
+                ),
+                ProductItem(
+                    product_type_brand,
+                    R.drawable.brand_best_sweats_hoodie_now_product2,
+                    "Safarispot",
+                    "Safarispot Women 1/2 Basic Safari Hoodie Sky",
+                    "92,000원",
+                    null,
+                    option_no_exist
+                ),
+                ProductItem(
+                    product_type_brand,
+                    R.drawable.brand_best_sweats_hoodie_now_product3,
+                    "s/e/o",
+                    "[KREAM Exclusive/Pre-Order] s/e/o Women Logo Hoodie Heather Gray",
+                    "128,000원",
+                    null,
+                    option_no_exist
+                ),
+                ProductItem(
+                    product_type_brand,
+                    R.drawable.brand_best_sweats_hoodie_now_product4,
+                    "Cavish",
+                    "Cavish Seller Logo Hoodie Charcoal Pink - 23SS",
+                    "79,000원",
+                    "15%",
+                    option_exist
+                ),
+                ProductItem(
+                    product_type_brand,
+                    R.drawable.brand_best_sweats_hoodie_now_product5,
+                    "Surgery",
+                    "Surgery Paisley Destroyed Hoodie Melange Beige",
+                    "248,000원",
+                    null,
+                    option_no_exist
+                ),
+                ProductItem(
+                    product_type_general,
+                    R.drawable.brand_best_sweats_hoodie_now_product6,
+                    "Wooyoungmi",
+                    "Wooyoungmi Feather Back Logo Hooded Sweatshirt Black - 23SS",
+                    "463,000원",
+                    null,
+                    option_exist
+                ),
+                ProductItem(
+                    product_type_brand,
+                    R.drawable.brand_best_sweats_hoodie_now_product7,
+                    "Surgery",
+                    "Surgery Typing Cutting Logo Hoodie Grey",
+                    "148,000원",
+                    null,
+                    option_no_exist
+                ),
+                ProductItem(
+                    product_type_general,
+                    R.drawable.brand_best_sweats_hoodie_now_product8,
+                    "Essentials",
+                    "Essentials The Core Collection Hoodie Light Oatmeal",
+                    "169,000원",
+                    null,
+                    option_exist
+                )
+            ),
+            null
         )
     )
 
