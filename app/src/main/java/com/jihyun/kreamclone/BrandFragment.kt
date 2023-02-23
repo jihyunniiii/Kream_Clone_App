@@ -14,6 +14,20 @@ class BrandFragment : Fragment() {
 
     private var brandList = listOf(
         HomeItem(
+            type_banner,
+            listOf(
+                R.drawable.brand_banner_image1,
+                R.drawable.brand_banner_image2,
+                R.drawable.brand_banner_image3,
+                R.drawable.brand_banner_image4,
+                R.drawable.brand_banner_image5
+            ),
+            listOf(null),
+            null,
+            listOf(null),
+            null
+        ),
+        HomeItem(
             type_shortcut,
             listOf(
                 R.drawable.brand_all_brand,

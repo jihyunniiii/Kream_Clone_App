@@ -5,17 +5,21 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import androidx.viewpager2.widget.ViewPager2
+import com.jihyun.kreamclone.databinding.ItemBannerListBinding
 import com.jihyun.kreamclone.databinding.ItemLineBinding
 import com.jihyun.kreamclone.databinding.ItemProductListBinding
 import com.jihyun.kreamclone.databinding.ItemShortcutBinding
 import com.jihyun.kreamclone.databinding.ItemTitleBinding
+import java.lang.Math.ceil
 
 const val type_shortcut = 1
 const val type_title = 2
 const val type_product_list = 3
-const val type_line = 4
-const val detail_exist = 5
-const val detail_no_exist = 6
+const val type_banner = 4
+const val type_line = 5
+const val detail_exist = 6
+const val detail_no_exist = 7
 
 class HomeItemAdapter(context: Context) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     private val inflater by lazy { LayoutInflater.from(context) }
@@ -40,6 +44,10 @@ class HomeItemAdapter(context: Context) : RecyclerView.Adapter<RecyclerView.View
                 val binding = ItemProductListBinding.inflate(inflater, parent, false)
                 productListViewHolder(binding)
             }
+            type_banner -> {
+                val binding = ItemBannerListBinding.inflate(inflater, parent, false)
+                bannerListViewHolder(binding)
+            }
             else -> {
                 val binding = ItemLineBinding.inflate(inflater, parent, false)
                 lineViewHolder(binding)
@@ -59,6 +67,10 @@ class HomeItemAdapter(context: Context) : RecyclerView.Adapter<RecyclerView.View
             }
             type_product_list -> {
                 (holder as productListViewHolder).onBind(itemList[position])
+                holder.setIsRecyclable(false)
+            }
+            type_banner -> {
+                (holder as bannerListViewHolder).onBind(itemList[position])
                 holder.setIsRecyclable(false)
             }
             type_line -> {
@@ -114,6 +126,27 @@ class HomeItemAdapter(context: Context) : RecyclerView.Adapter<RecyclerView.View
             val productItemAdapter = ProductItemAdapter(context)
             binding.rvProductList.adapter = productItemAdapter
             productItemAdapter.setProductList(data.product as List<ProductItem>)
+        }
+    }
+
+    inner class bannerListViewHolder(
+        private val binding: ItemBannerListBinding
+    ) : RecyclerView.ViewHolder(binding.root) {
+        fun onBind(data: HomeItem) {
+            val bannerAdapter = BannerViewPagerAdapter(context)
+            binding.vpBanner.adapter = bannerAdapter
+            bannerAdapter.setBannerList(data.image as List<Int>)
+
+            var bannerPosition = Int.MAX_VALUE / 2 - ceil(data.image.size.toDouble() / 2).toInt()
+            binding.vpBanner.setCurrentItem(bannerPosition, false)
+
+            binding.vpBanner.apply {
+                registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
+                    override fun onPageSelected(position: Int) {
+                        super.onPageSelected(position)
+                    }
+                })
+            }
         }
     }
 

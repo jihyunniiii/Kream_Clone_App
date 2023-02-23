@@ -9,10 +9,10 @@ import com.jihyun.kreamclone.databinding.ItemBrandProductBinding
 import com.jihyun.kreamclone.databinding.ItemGeneralProductBinding
 import java.text.DecimalFormat
 
-const val option_exist = 7
-const val option_no_exist = 8
-const val product_type_general = 9
-const val product_type_brand = 10
+const val option_exist = 8
+const val option_no_exist = 9
+const val product_type_general = 10
+const val product_type_brand = 11
 
 class ProductItemAdapter(context: Context) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     private val inflater by lazy { LayoutInflater.from(context) }
