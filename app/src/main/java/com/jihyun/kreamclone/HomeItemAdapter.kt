@@ -8,15 +8,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.ViewPager2
-import com.jihyun.kreamclone.databinding.ItemBannerListBinding
-import com.jihyun.kreamclone.databinding.ItemLineBinding
-import com.jihyun.kreamclone.databinding.ItemProductListBinding
-import com.jihyun.kreamclone.databinding.ItemShortcutBinding
-import com.jihyun.kreamclone.databinding.ItemTitleBinding
-import kotlinx.coroutines.*
+import com.jihyun.kreamclone.databinding.*
 import kotlinx.coroutines.Runnable
 import java.lang.Math.ceil
-import kotlin.coroutines.CoroutineContext
 
 const val type_shortcut = 1
 const val type_title = 2
@@ -30,6 +24,7 @@ class HomeItemAdapter(context: Context) : RecyclerView.Adapter<RecyclerView.View
     private val inflater by lazy { LayoutInflater.from(context) }
     private var itemList: List<HomeItem> = emptyList()
     private val context = context
+    private var itemCount: Int = 0
 
     override fun getItemViewType(position: Int): Int {
         return itemList[position].itemType
@@ -76,6 +71,8 @@ class HomeItemAdapter(context: Context) : RecyclerView.Adapter<RecyclerView.View
             }
             type_banner -> {
                 (holder as bannerListViewHolder).onBind(itemList[position])
+                itemCount = itemList[position].image.size
+                holder.bannerBar()
                 holder.setIsRecyclable(false)
             }
             type_line -> {
@@ -115,12 +112,11 @@ class HomeItemAdapter(context: Context) : RecyclerView.Adapter<RecyclerView.View
         fun onBind(data: HomeItem) {
             binding.tvItemTitleTitle.text = data.title[0]
             binding.tvItemTitleSubTitle.text = data.subTitle
-            binding.tvItemTitleDetails.visibility =
-                if (data.detail == detail_exist) {
-                    View.VISIBLE
-                } else {
-                    View.GONE
-                }
+            binding.tvItemTitleDetails.visibility = if (data.detail == detail_exist) {
+                View.VISIBLE
+            } else {
+                View.GONE
+            }
         }
     }
 
@@ -160,6 +156,31 @@ class HomeItemAdapter(context: Context) : RecyclerView.Adapter<RecyclerView.View
                 while (true) {
                     Thread.sleep(7000)
                     handler.sendEmptyMessage(0)
+                }
+            }
+        }
+
+        fun bannerBar() {
+            binding.vpBanner.apply {
+                binding.viewBannerBarBackground.post {
+                    var barWidth = binding.viewBannerBarBackground.measuredWidth / itemCount
+                    var x = binding.viewBannerBarBackground.left
+
+                    val lp = binding.viewBannerBar.layoutParams
+                    lp?.let {
+                        lp.width = barWidth
+                        binding.viewBannerBar.layoutParams = lp
+                    }
+
+                    binding.viewBannerBar.translationX = x.toFloat()
+
+                    this.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
+                        override fun onPageSelected(position: Int) {
+                            super.onPageSelected(position)
+                            val translatePosition = barWidth * (position % itemCount)
+                            binding.viewBannerBar.translationX = (translatePosition + x).toFloat()
+                        }
+                    })
                 }
             }
         }
