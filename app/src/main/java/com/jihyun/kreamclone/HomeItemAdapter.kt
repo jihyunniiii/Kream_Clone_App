@@ -1,6 +1,8 @@
 package com.jihyun.kreamclone
 
 import android.content.Context
+import android.os.Handler
+import android.os.Looper
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -11,7 +13,10 @@ import com.jihyun.kreamclone.databinding.ItemLineBinding
 import com.jihyun.kreamclone.databinding.ItemProductListBinding
 import com.jihyun.kreamclone.databinding.ItemShortcutBinding
 import com.jihyun.kreamclone.databinding.ItemTitleBinding
+import kotlinx.coroutines.*
+import kotlinx.coroutines.Runnable
 import java.lang.Math.ceil
+import kotlin.coroutines.CoroutineContext
 
 const val type_shortcut = 1
 const val type_title = 2
@@ -132,20 +137,30 @@ class HomeItemAdapter(context: Context) : RecyclerView.Adapter<RecyclerView.View
     inner class bannerListViewHolder(
         private val binding: ItemBannerListBinding
     ) : RecyclerView.ViewHolder(binding.root) {
+        var bannerPosition: Int = 0
+        val handler = Handler(Looper.getMainLooper()) {
+            binding.vpBanner.setCurrentItem(++bannerPosition, true)
+            true
+        }
+
         fun onBind(data: HomeItem) {
             val bannerAdapter = BannerViewPagerAdapter(context)
             binding.vpBanner.adapter = bannerAdapter
             bannerAdapter.setBannerList(data.image as List<Int>)
 
-            var bannerPosition = Int.MAX_VALUE / 2 - ceil(data.image.size.toDouble() / 2).toInt()
+            bannerPosition = Int.MAX_VALUE / 2 - ceil(data.image.size.toDouble() / 2).toInt()
             binding.vpBanner.setCurrentItem(bannerPosition, false)
 
-            binding.vpBanner.apply {
-                registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
-                    override fun onPageSelected(position: Int) {
-                        super.onPageSelected(position)
-                    }
-                })
+            val thread = Thread(PagerRunnable())
+            thread.start()
+        }
+
+        inner class PagerRunnable : Runnable {
+            override fun run() {
+                while (true) {
+                    Thread.sleep(7000)
+                    handler.sendEmptyMessage(0)
+                }
             }
         }
     }
