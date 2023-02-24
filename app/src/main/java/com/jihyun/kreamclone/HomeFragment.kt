@@ -17,13 +17,15 @@ class HomeFragment : Fragment() {
     private var fragmentList = listOf(
         RecommendFragment(),
         MenFragment(),
-        WomenFragment()
+        WomenFragment(),
+        BrandFragment()
     )
 
     private var tabNames = listOf(
         "추천",
         "남성",
-        "여성"
+        "여성",
+        "브랜드"
     )
 
     override fun onCreateView(

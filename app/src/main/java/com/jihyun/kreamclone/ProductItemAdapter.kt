@@ -5,11 +5,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.jihyun.kreamclone.databinding.ItemBrandProductBinding
 import com.jihyun.kreamclone.databinding.ItemGeneralProductBinding
+import java.text.DecimalFormat
 
-const val option_exist = 7
-const val option_no_exist = 8
-const val product_type_general = 9
+const val option_exist = 8
+const val option_no_exist = 9
+const val product_type_general = 10
+const val product_type_brand = 11
 
 class ProductItemAdapter(context: Context) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     private val inflater by lazy { LayoutInflater.from(context) }
@@ -26,9 +29,8 @@ class ProductItemAdapter(context: Context) : RecyclerView.Adapter<RecyclerView.V
                 generalProductViewHolder(binding)
             }
             else -> {
-                // brand product 만든 후 수정 필요
-                val binding = ItemGeneralProductBinding.inflate(inflater, parent, false)
-                generalProductViewHolder(binding)
+                val binding = ItemBrandProductBinding.inflate(inflater, parent, false)
+                brandProductViewHolder(binding)
             }
         }
     }
@@ -37,6 +39,10 @@ class ProductItemAdapter(context: Context) : RecyclerView.Adapter<RecyclerView.V
         when (productList[position].productType) {
             product_type_general -> {
                 (holder as generalProductViewHolder).onBind(productList[position])
+                holder.setIsRecyclable(false)
+            }
+            product_type_brand -> {
+                (holder as brandProductViewHolder).onBind(productList[position])
                 holder.setIsRecyclable(false)
             }
         }
@@ -64,5 +70,41 @@ class ProductItemAdapter(context: Context) : RecyclerView.Adapter<RecyclerView.V
                     View.GONE
                 }
         }
+    }
+
+    inner class brandProductViewHolder(
+        private val binding: ItemBrandProductBinding
+    ) : RecyclerView.ViewHolder(binding.root) {
+        fun onBind(data: ProductItem) {
+            binding.ivItemBrandProductImage.setImageDrawable(binding.root.context.getDrawable(data.image))
+            binding.tvItemBrandProductBrand.text = data.brand
+            binding.tvItemBrandProductName.text = data.name
+            binding.tvItemBrandProductPrice.text =
+                if (data.option == option_exist) {
+                    salePrice(data.price, data.sale!!)
+                } else {
+                    data.price
+                }
+            binding.tvItemBrandDiscount.visibility =
+                if (data.option == option_exist) {
+                    binding.tvItemBrandDiscount.text = data.sale!!
+                    View.VISIBLE
+                } else {
+                    View.GONE
+                }
+        }
+    }
+
+    fun salePrice(price: String, sale: String): String {
+        var priceNumber = price.replace("[^\\d]".toRegex(), "")
+        var priceNum = priceNumber.toInt()
+        var saleNumber = sale.replace("[^\\d]".toRegex(), "")
+        var saleNum = saleNumber.toInt()
+
+        priceNum = (priceNum * (100 - saleNum) * 0.01).toInt()
+
+        val format = DecimalFormat("#,###")
+
+        return (format.format(priceNum) + "원")
     }
 }

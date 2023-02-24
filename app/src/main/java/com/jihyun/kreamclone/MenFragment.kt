@@ -55,6 +55,7 @@ class MenFragment : Fragment() {
                     "Nike",
                     "Nike x Stussy Striped Wool Jacket Black (DR4023-010)",
                     "320,000원",
+                    null,
                     option_no_exist
                 ),
                 ProductItem(
@@ -63,6 +64,7 @@ class MenFragment : Fragment() {
                     "Wooyoungmi",
                     "Wooyoungmi iPhone Feather Case Black",
                     "159,000원",
+                    null,
                     option_no_exist
                 ),
                 ProductItem(
@@ -71,6 +73,7 @@ class MenFragment : Fragment() {
                     "Peaceminusone",
                     "Peaceminusone 5 Panel Ball Cap #2 Mint",
                     "570,000원",
+                    null,
                     option_no_exist
                 ),
                 ProductItem(
@@ -79,6 +82,7 @@ class MenFragment : Fragment() {
                     "Nike",
                     "Nike x Stussy NRG RA Washed Pullover Hoodie Black (DN4028-010)",
                     "241,000원",
+                    null,
                     option_exist
                 ),
                 ProductItem(
@@ -87,6 +91,7 @@ class MenFragment : Fragment() {
                     "Stussy",
                     "Stussy 8 Ball Sherpa Jacket Natural",
                     "408,000원",
+                    null,
                     option_exist
                 ),
                 ProductItem(
@@ -95,6 +100,7 @@ class MenFragment : Fragment() {
                     "Yeezy",
                     "Yeezy Gap Engineered By Balenciaga Flame Cap Black",
                     "233,000원",
+                    null,
                     option_exist
                 ),
                 ProductItem(
@@ -103,6 +109,7 @@ class MenFragment : Fragment() {
                     "Ader Error",
                     "Ader Error x Zara Jogger Pants Grey",
                     "277,000원",
+                    null,
                     option_exist
                 ),
                 ProductItem(
@@ -111,6 +118,7 @@ class MenFragment : Fragment() {
                     "Louis Vuitton",
                     "Louis Vuitton Pocket Organizer Monogram Eclipse",
                     "533,000원",
+                    null,
                     option_exist
                 )
             ),
@@ -144,6 +152,7 @@ class MenFragment : Fragment() {
                     "New Balance",
                     "New Balance x JJJJound 991 Made in UK Grey",
                     "790,000원",
+                    null,
                     option_no_exist
                 ),
                 ProductItem(
@@ -152,6 +161,7 @@ class MenFragment : Fragment() {
                     "Nike",
                     "Nike NSW Authentics Varsity Jacket Brown Basalt - Asia",
                     "150,000원",
+                    null,
                     option_no_exist
                 ),
                 ProductItem(
@@ -160,6 +170,7 @@ class MenFragment : Fragment() {
                     "Undermycar",
                     "Undermycar Etle Slim Fit Glossy Film Coated Jeans Black Ink - 22FW",
                     "153,000원",
+                    null,
                     option_no_exist
                 ),
                 ProductItem(
@@ -168,6 +179,7 @@ class MenFragment : Fragment() {
                     "Samsung",
                     "Samsung Galaxy S23 Ultra 512GB Phantom Black (Korean Ver.)",
                     "1,395,000원",
+                    null,
                     option_no_exist
                 ),
                 ProductItem(
@@ -176,6 +188,7 @@ class MenFragment : Fragment() {
                     "Music & Goods",
                     "Paloalto Dirt LP Black",
                     "70,000원",
+                    null,
                     option_no_exist
                 ),
                 ProductItem(
@@ -184,6 +197,7 @@ class MenFragment : Fragment() {
                     "Palace",
                     "Palace Facemask Shearling Thermal Hood Grey - 23SS",
                     "350,000원",
+                    null,
                     option_no_exist
                 ),
                 ProductItem(
@@ -192,6 +206,7 @@ class MenFragment : Fragment() {
                     "Darkr8m Studio",
                     "Darkr8m Studio Wool Varsity Cap",
                     "90,000원",
+                    null,
                     option_exist
                 ),
                 ProductItem(
@@ -200,6 +215,7 @@ class MenFragment : Fragment() {
                     "Ader Error",
                     "Ader Error Bant Jumper Burgundy",
                     "509,000원",
+                    null,
                     option_no_exist
                 )
             ),
@@ -233,6 +249,7 @@ class MenFragment : Fragment() {
                     "Jordan",
                     "Jordan 1 High 85 Black White",
                     "358,000원",
+                    null,
                     option_no_exist
                 ),
                 ProductItem(
@@ -241,6 +258,7 @@ class MenFragment : Fragment() {
                     "Nike",
                     "Nike x Stussy Air Penny II Rattan and Limestone",
                     "263,000원",
+                    null,
                     option_no_exist
                 ),
                 ProductItem(
@@ -249,6 +267,7 @@ class MenFragment : Fragment() {
                     "Balenciaga",
                     "Balenciaga Tyrex Sneakers Black",
                     "429,000원",
+                    null,
                     option_no_exist
                 ),
                 ProductItem(
@@ -257,6 +276,7 @@ class MenFragment : Fragment() {
                     "New Balance",
                     "New Balance 990v6 Made in USA Grey",
                     "299,000원",
+                    null,
                     option_exist
                 ),
                 ProductItem(
@@ -265,6 +285,7 @@ class MenFragment : Fragment() {
                     "Adidas",
                     "Adidas x Palace Samba White Black",
                     "295,000원",
+                    null,
                     option_no_exist
                 ),
                 ProductItem(
@@ -273,6 +294,7 @@ class MenFragment : Fragment() {
                     "Nike",
                     "Nike x Stussy Air Penny II Black",
                     "251,000원",
+                    null,
                     option_exist
                 ),
                 ProductItem(
@@ -281,6 +303,7 @@ class MenFragment : Fragment() {
                     "New Balance",
                     "New Balance x JJJJound 990v3 Olive",
                     "590,000원",
+                    null,
                     option_exist
                 ),
                 ProductItem(
@@ -289,6 +312,7 @@ class MenFragment : Fragment() {
                     "Oakley",
                     "Oakley Factory Team x Brain Dead Flesh Milk Black",
                     "337,000원",
+                    null,
                     option_exist
                 )
             ),
