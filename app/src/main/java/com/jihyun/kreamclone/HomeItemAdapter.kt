@@ -165,6 +165,7 @@ class HomeItemAdapter(context: Context) : RecyclerView.Adapter<RecyclerView.View
                 binding.viewBannerBarBackground.post {
                     var barWidth = binding.viewBannerBarBackground.measuredWidth / itemCount
                     var x = binding.viewBannerBarBackground.left
+                    var translatePosition = barWidth * (bannerPosition % itemCount)
 
                     val lp = binding.viewBannerBar.layoutParams
                     lp?.let {
@@ -172,12 +173,13 @@ class HomeItemAdapter(context: Context) : RecyclerView.Adapter<RecyclerView.View
                         binding.viewBannerBar.layoutParams = lp
                     }
 
-                    binding.viewBannerBar.translationX = x.toFloat()
+                    binding.viewBannerBar.translationX = (translatePosition + x).toFloat()
 
                     this.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
                         override fun onPageSelected(position: Int) {
                             super.onPageSelected(position)
-                            val translatePosition = barWidth * (position % itemCount)
+                            bannerPosition = position
+                            translatePosition = barWidth * (position % itemCount)
                             binding.viewBannerBar.translationX = (translatePosition + x).toFloat()
                         }
                     })
