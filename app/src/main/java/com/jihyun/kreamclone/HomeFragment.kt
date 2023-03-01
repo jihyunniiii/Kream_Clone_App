@@ -18,14 +18,16 @@ class HomeFragment : Fragment() {
         RecommendFragment(),
         MenFragment(),
         WomenFragment(),
-        BrandFragment()
+        BrandFragment(),
+        ReleaseInfoFragment()
     )
 
     private var tabNames = listOf(
         "추천",
         "남성",
         "여성",
-        "브랜드"
+        "브랜드",
+        "발매정보"
     )
 
     override fun onCreateView(
@@ -43,7 +45,7 @@ class HomeFragment : Fragment() {
         adapter.setFragmentList(fragmentList)
 
         TabLayoutMediator(binding.tabHome, binding.vpHome)
-        { tab, position -> tab.text = tabNames[position]}.attach()
+        { tab, position -> tab.text = tabNames[position] }.attach()
     }
 
     override fun onDestroyView() {

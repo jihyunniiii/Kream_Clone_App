@@ -16,4 +16,6 @@
     <!-- item brand product -->
     <string name="item_brand_product_purchase_price">구매가</string>
     <string name="item_brand_product_brand_delivery">브랜드배송</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
