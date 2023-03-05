@@ -25,6 +25,66 @@ class ReleaseInfoFragment : Fragment() {
             "Jordan",
             "Jordan 1 High 85 Black White",
             to_be_released
+        ),
+        ReleaseItem(
+            R.drawable.release_info_product3,
+            "Asics",
+            "Asics x Kiko Kostadinov Gel-Quantum Zientzia Dark Grey",
+            to_be_released
+        ),
+        ReleaseItem(
+            R.drawable.release_info_product4,
+            "Nike",
+            "Nike Dunk Low Retro Grey Fog",
+            to_be_released
+        ),
+        ReleaseItem(
+            R.drawable.release_info_product5,
+            "Nike",
+            "Nike Dunk Low Retro Black",
+            to_be_released
+        ),
+        ReleaseItem(
+            R.drawable.release_info_product6,
+            "New Balance",
+            "New Balance 990v3 Made in USA Olive",
+            to_be_released
+        ),
+        ReleaseItem(
+            R.drawable.release_info_product7,
+            "New Balance",
+            "New Balance 990v1 Made in USA Olive",
+            to_be_released
+        ),
+        ReleaseItem(
+            R.drawable.release_info_product8,
+            "New Balance",
+            "New Balance 990v2 Made in USA Grey Tan",
+            to_be_released
+        ),
+        ReleaseItem(
+            R.drawable.release_info_product9,
+            "Nike",
+            "Nike Dunk High Retro Psychic Purple and Black",
+            to_be_released
+        ),
+        ReleaseItem(
+            R.drawable.release_info_product10,
+            "New Balance",
+            "New Balance 990v3 Made in USA Tan Green",
+            to_be_released
+        ),
+        ReleaseItem(
+            R.drawable.release_info_product11,
+            "New Balance",
+            "New Balance 990v1 Tan Green",
+            to_be_released
+        ),
+        ReleaseItem(
+            R.drawable.release_info_product12,
+            "Adidas",
+            "Adidas x Bodega x Beams Adimatic Off White Green",
+            to_be_released
         )
     )
 
