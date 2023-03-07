@@ -1,7 +1,9 @@
 package com.jihyun.kreamclone
 
 import android.content.Context
+import android.graphics.Color
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.jihyun.kreamclone.databinding.ItemReleaseProductBinding
@@ -37,6 +39,10 @@ class ReleaseItemAdapter(context: Context) :
             binding.ivItemReleaseProductImage.setImageDrawable(binding.root.context.getDrawable(data.image))
             binding.tvItemReleaseProductBrand.text = data.brand
             binding.tvItemReleaseProductName.text = data.name
+
+            if (data.option == end_of_release) {
+                binding.ivItemReleaseProductImage.alpha = 0.3F
+            }
         }
     }
 }

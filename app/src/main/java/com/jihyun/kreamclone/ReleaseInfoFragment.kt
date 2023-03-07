@@ -72,19 +72,19 @@ class ReleaseInfoFragment : Fragment() {
             R.drawable.release_info_product10,
             "New Balance",
             "New Balance 990v3 Made in USA Tan Green",
-            to_be_released
+            end_of_release
         ),
         ReleaseItem(
             R.drawable.release_info_product11,
             "New Balance",
             "New Balance 990v1 Tan Green",
-            to_be_released
+            end_of_release
         ),
         ReleaseItem(
             R.drawable.release_info_product12,
             "Adidas",
             "Adidas x Bodega x Beams Adimatic Off White Green",
-            to_be_released
+            end_of_release
         )
     )
 
